@@ -8,9 +8,14 @@ import { AppComponent } from './app.component';
 import { DepartmentComponent } from './page/department/department.component';
 import { DeparmentListarComponent } from './page/department/deparment-listar/deparment-listar.component';
 import { DepartmentEditarComponent } from './page/department/department-editar/department-editar.component';
+import { DepartmentBuscarComponent } from './page/department/department-buscar/department-buscar.component';
+import { DepartmentInsertComponent } from './page/department/department-insert/department-insert.component';
+import { DepartmentDialogoComponent } from './page/department/deparment-listar/department-dialogo/department-dialogo.component';
 
 import { ProvinceComponent } from './page/province/province.component';
 import { ProvinceListarComponent } from './page/province/province-listar/province-listar.component';
+import { ProvinceInsertComponent } from './page/province/province-insert/province-insert.component';
+import { ProvinceDialogoComponent } from './page/province/province-listar/province-dialogo/province-dialogo.component';
 
 import { AddressComponent } from './page/address/address.component';
 import { AddressListarComponent } from './page/address/address-listar/address-listar.component';
@@ -33,16 +38,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatTableModule} from '@angular/material/table'
 import { FormsModule } from '@angular/forms';
-import { DepartmentInsertComponent } from './page/department/department-insert/department-insert.component';
+
 import { MatButtonModule } from '@angular/material/button';
 import{MatIconModule} from'@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { RolComponent } from './page/rol/rol.component';
-import { DepartmentBuscarComponent } from './page/department/department-buscar/department-buscar.component';
-import { DepartmentDialogoComponent } from './page/department/deparment-listar/department-dialogo/department-dialogo.component';
+
+
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { ProvinceInsertComponent } from './page/province/province-insert/province-insert.component';
+
+import { LoginComponent } from './page/login/login.component';
+import { MatSelectModule } from '@angular/material/select';
+import { ProvinceBuscarComponent } from './page/province/province-buscar/province-buscar.component';
+
 
 
 
@@ -70,7 +79,10 @@ import { ProvinceInsertComponent } from './page/province/province-insert/provinc
     DepartmentEditarComponent,
     DepartmentBuscarComponent,
     DepartmentDialogoComponent,
-    ProvinceInsertComponent
+    ProvinceInsertComponent,
+    LoginComponent,
+    ProvinceDialogoComponent,
+    ProvinceBuscarComponent
   ],
   imports: [
     BrowserModule,
@@ -83,7 +95,8 @@ import { ProvinceInsertComponent } from './page/province/province-insert/provinc
     MatInputModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

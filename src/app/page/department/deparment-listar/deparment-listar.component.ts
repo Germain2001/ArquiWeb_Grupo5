@@ -12,7 +12,7 @@ import { DepartmentDialogoComponent } from './department-dialogo/department-dial
 })
 export class DeparmentListarComponent implements OnInit {
   dataSource: MatTableDataSource<Department> = new MatTableDataSource();
-  displayedColumns: string[] = ['id', 'name', 'province', 'acciones'];
+  displayedColumns: string[] = ['id', 'name', 'acciones'];
   private idMayor: number = 0;
   constructor(private ps: DepartmentService, private dialog: MatDialog) { }
 

@@ -1,3 +1,5 @@
+import { Department } from 'src/app/model/department';
+import { DepartmentService } from 'src/app/service/department.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./department-buscar.component.css']
 })
 export class DepartmentBuscarComponent implements OnInit {
-
-  constructor() { }
+  textoBuscar: string = ""
+  constructor(private departmentService:DepartmentService) { }
 
   ngOnInit(): void {
+  }
+
+  buscar(e: any) {
+    let array:Department[] = [];
+    this.departmentService.listar().subscribe(data => {
+
+      data.forEach((element, index) => {
+        if (element.NDepartment.includes(e.target.value)) {
+          array.push(data[index]);
+        }
+      });
+      this.departmentService.setLista(array);
+    })
   }
 
 }

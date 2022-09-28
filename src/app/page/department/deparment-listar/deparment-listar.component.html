@@ -2,6 +2,11 @@
   <div style=" text-align: center;">
     <h1>Lista de Departamentos</h1>
   </div>
+
+  <mat-form-field mat-dialog-title = "buscar">
+    <input matInput (keyup)="filtrar($event)" placeholder="Buscar">
+</mat-form-field>
+
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
   <!-- Name Column -->
@@ -14,12 +19,6 @@
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef> Name </th>
     <td mat-cell *matCellDef="let element"> {{element.NDepartment}} </td>
-  </ng-container>
-
-  <!-- Name Column -->
-  <ng-container matColumnDef="province">
-    <th mat-header-cell *matHeaderCellDef> provincia </th>
-    <td mat-cell *matCellDef="let element"> {{element.NDepartment.province}} </td>
   </ng-container>
 
   <!-- Symbol Column -->

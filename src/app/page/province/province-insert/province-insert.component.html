@@ -1,1 +1,30 @@
-<p>province-insert works!</p>
+
+  <h1>Province</h1>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Id</mat-label>
+    <input matInput placeholder="id" [(ngModel)]="province.id">
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>provincia</mat-label>
+    <input matInput required placeholder="province" [(ngModel)]="province.NProvince">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Seleccione Departamento</mat-label>
+    <mat-select [(value)]="idDepartmentSeleccionado" required>
+        <mat-option *ngFor="let p of listaDepartment" [value]="p.id">
+            {{p.NDepartment}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+  <br>
+  <button mat-raised-button color="primary" (click)="aceptar()">Aceptar</button>
+  <button mat-raised-button color="warn" routerLink="/province">Cancelar</button>
+  <p>{{mensaje}}</p>
+

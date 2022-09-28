@@ -1,3 +1,6 @@
+import { ProvinceBuscarComponent } from './page/province/province-buscar/province-buscar.component';
+import { LoginComponent } from './page/login/login.component';
+import { DepartmentBuscarComponent } from './page/department/department-buscar/department-buscar.component';
 import { DepartmentEditarComponent } from './page/department/department-editar/department-editar.component';
 import { ProvinceComponent } from './page/province/province.component';
 import { DepartmentComponent } from './page/department/department.component';
@@ -10,14 +13,21 @@ import { UserComponent } from './page/user/user.component';
 import { ComplaintComponent } from './page/complaint/complaint.component';
 import { PolicestationComponent } from './page/policestation/policestation.component';
 import { DepartmentInsertComponent } from './page/department/department-insert/department-insert.component';
+import { ProvinceInsertComponent } from './page/province/province-insert/province-insert.component';
 
 const routes: Routes = [{
   path: 'department', component: DepartmentComponent, children: [
     {path: 'new', component: DepartmentInsertComponent},
-    {path: 'modificar/:id', component: DepartmentEditarComponent}
+    {path: 'modificar/:id', component: DepartmentEditarComponent},
+    {path: 'buscar', component: DepartmentBuscarComponent}
   ]
-}, {
-  path: 'province', component: ProvinceComponent, children: []
+},
+{
+  path: 'province', component: ProvinceComponent, children: [
+    {path: 'new', component: ProvinceInsertComponent},
+    {path: 'modificar/:id', component: ProvinceInsertComponent},
+    {path: 'buscar', component: ProvinceBuscarComponent}
+  ]
 },
 {
   path: 'address', component: AddressComponent, children: []
@@ -36,6 +46,9 @@ const routes: Routes = [{
 },
 {
   path: 'policestation', component: PolicestationComponent, children: []
+},
+{
+  path: 'login', component: LoginComponent, children: []
 },
 
 

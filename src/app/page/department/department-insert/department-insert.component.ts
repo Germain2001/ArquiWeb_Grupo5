@@ -20,7 +20,7 @@ export class DepartmentInsertComponent implements OnInit {
   }
 
   aceptar() {
-    if (this.department.NDepartment.length > 0 && this.department.NDepartment.length > 0) {
+    if (this.department.NDepartment.length > 0 ) {
       this.departmentService.insertar(this.department).subscribe(data => {
         this.departmentService.listar().subscribe(data => {
           this.departmentService.setLista(data);

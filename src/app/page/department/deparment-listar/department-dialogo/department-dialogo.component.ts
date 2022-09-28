@@ -10,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DepartmentDialogoComponent implements OnInit {
 
-  constructor(private departmentService: DepartmentService, private dialogRef: MatDialogRef<DepartmentDialogoComponent>) { }
+  constructor(private departmentService: DepartmentService,
+    private dialogRef: MatDialogRef<DepartmentDialogoComponent>) { }
 
   ngOnInit(): void {
   }

@@ -4,46 +4,87 @@ module.exports = function () {
       {
         id: 1,
         NDepartment: "Amazonas",
+        provincias: {
+          "id": 3,
+          NProvince: "Chachapoyas"
+        }
 
       },
       {
         id: 2,
         NDepartment: "Ancash",
+        provincias: {
+          "id": 4,
+          NProvince: "Suyana"
+        }
 
       },
       {
         id: 3,
         NDepartment: "Apurimac",
+        provincias: {
+          "id": 4,
+          NProvince: "Suyana"
+        }
 
       },
       {
         id: 4,
         NDepartment: "Arequipa",
+        provincias: {
+          "id": 8,
+          NProvince: "Abancay"
+        }
 
       },
       {
         id: 5,
         NDepartment: "Ayacucho",
+        provincias: {
+          "id": 4,
+          NProvince: "Suyana"
+        }
 
       },
       {
         id: 6,
         NDepartment: "Cajamarca",
+        provincias: {
+          "id": 7,
+          NProvince: "Chota"
+        }
 
       },
       {
         id: 7,
         NDepartment: "Callao",
+        provincias: {
+          "id": 6,
+          NProvince: "Callao"
+        }
 
       },
       {
         id: 8,
         NDepartment: "Lima",
+        provincias: {
+          "id": 1,
+          NProvince: "Barranca",
+          "id": 2,
+          NProvince: "Huarochiri"
+        }
+
 
       },
       {
         id: 9,
         NDepartment: "Piura",
+        provincias: {
+          "id": 4,
+          NProvince: "Suyana",
+          "id": 5,
+          NProvince: "Talara"
+        }
 
       }
     ],
@@ -74,7 +115,7 @@ module.exports = function () {
       },
       {
         id: 4,
-        NProvince: "Suyana",
+        NProvince: "Sullana",
         department: {
           "id": 9,
           NDepartment: "Piura"
@@ -98,68 +139,62 @@ module.exports = function () {
       },
       {
         id: 7,
-        NProvince: "Lima",
+        NProvince: "Chota",
         department: {
           "id": 6,
           NDepartment: "Cajamarca"
+        }
+      },
+      {
+        id: 8,
+        NProvince: "Abancay",
+        department: {
+          "id": 3,
+          NDepartment: "Apurimac"
         }
       }
     ],
     distritos: [
       {
         CDistrict: 1,
-        NDistrict: "Miraflores",
-        province: { CProvince: 1 }
+        NDistrict: "Supe",
+        province: {
+          "CProvince": 1 ,
+          NProvince: "Barranca"
+        }
       },
       {
         CDistrict: 2,
-        NDistrict: "Jesus Maria",
-        province: { CProvince: 1 }
+        NDistrict: "Conchan",
+        province: {
+          "CProvince": 7 ,
+          NProvince: "Chota"
+        }
       },
       {
         CDistrict: 3,
-        NDistrict: "San Isidro",
-        province: { CProvince: 1 }
+        NDistrict: "Circa",
+        province: {
+          "CProvince": 8 ,
+          NProvince: "Abancay"
+        }
       },
       {
         CDistrict: 4,
-        NDistrict: "Lince",
-        province: { CProvince: 1 }
+        NDistrict: "Lobitos",
+        province: {
+          "CProvince": 5 ,
+          NProvince: "Talara"
+        }
       },
 
       {
         CDistrict: 5,
-        NDistrict: "Brena",
-        province: { CProvince: 1 }
-      },
-
-      {
-        CDistrict: 6,
-        NDistrict: "Rimac",
-        province: { CProvince: 1 }
-      },
-      {
-        CDistrict: 7,
-        NDistrict: "Los Olivos",
-        province: { CProvince: 1 }
-      },
-
-      {
-        CDistrict: 8,
-        NDistrict: "La Molina",
-        province: { CProvince: 1 }
-      },
-
-      {
-        CDistrict: 9,
-        NDistrict: "Independencia",
-        province: { CProvince: 1 }
-      },
-
-      {
-        CDistrict: 10,
-        NDistrict: "SJL",
-        province: { CProvince: 1 }
+        NDistrict: "Bellavista",
+        province: {
+          "CProvince": 4 ,
+          NProvince: "Sullana"
+        }
       }
     ],
     denuncias: [
