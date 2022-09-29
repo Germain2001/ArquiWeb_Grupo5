@@ -31,9 +31,11 @@ const routes: Routes = [{
 },
 {
   path: 'address', component: AddressComponent, children: []
+  path: 'address', component: AddressComponent, children: [
+  ]
 },
 {
-  path: 'district', component: DistrictComponent, children: []
+  ]
 },
 {
   path: 'person', component: PersonComponent, children: []
