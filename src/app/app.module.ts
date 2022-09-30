@@ -28,12 +28,16 @@ import { PersonListarComponent } from './page/person/person-listar/person-listar
 
 import { ComplaintComponent } from './page/complaint/complaint.component';
 import { ComplaintListarComponent } from './page/complaint/complaint-listar/complaint-listar.component';
+import { ComplaintInsertComponent } from './page/complaint/complaint-insert/complaint-insert.component';
+import { ComplaintBuscarComponent } from './page/complaint/complaint-buscar/complaint-buscar.component';
 
 import { UserComponent } from './page/user/user.component';
 import { UserListarComponent } from './page/user/user-listar/user-listar.component';
 
 import { PolicestationComponent } from './page/policestation/policestation.component';
 import { PolicestationListarComponent } from './page/policestation/policestation-listar/policestation-listar.component';
+import { PolicestationInsertComponent } from './page/policestation/policestation-insert/policestation-insert.component';
+import { PolicestationBuscarComponent } from './page/policestation/policestation-buscar/policestation-buscar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatTableModule} from '@angular/material/table'
@@ -51,6 +55,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { LoginComponent } from './page/login/login.component';
 import { MatSelectModule } from '@angular/material/select';
 import { ProvinceBuscarComponent } from './page/province/province-buscar/province-buscar.component';
+import { DistrictInsertComponent } from './page/district/district-insert/district-insert.component';
+import { DistrictBuscarComponent } from './page/district/district-buscar/district-buscar.component';
+import { DistrictDialogoComponent } from './page/district/district-listar/district-dialogo/district-dialogo.component';
+import { LandingPageComponent } from './page/landing-page/landing-page.component';
+import { NavbarlComponent } from './page/navbarl/navbarl.component';
+import { ComplaintDialogoComponent } from './page/complaint/complaint-listar/complaint-dialogo/complaint-dialogo.component';
 
 
 
@@ -82,7 +92,17 @@ import { ProvinceBuscarComponent } from './page/province/province-buscar/provinc
     ProvinceInsertComponent,
     LoginComponent,
     ProvinceDialogoComponent,
-    ProvinceBuscarComponent
+    ProvinceBuscarComponent,
+    DistrictInsertComponent,
+    DistrictBuscarComponent,
+    DistrictDialogoComponent,
+    LandingPageComponent,
+    NavbarlComponent,
+    PolicestationInsertComponent,
+    PolicestationBuscarComponent,
+    ComplaintDialogoComponent,
+    ComplaintBuscarComponent,
+    ComplaintInsertComponent
   ],
   imports: [
     BrowserModule,

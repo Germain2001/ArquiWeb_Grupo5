@@ -1,7 +1,7 @@
 import { District } from "./district";
 
 export class Address{
-    CAddress:number=0;
+    id:number=0;
     NUrb:string="";
     NStreet:string="";
     NBlock:string="";

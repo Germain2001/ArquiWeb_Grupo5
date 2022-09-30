@@ -156,96 +156,98 @@ module.exports = function () {
     ],
     distritos: [
       {
-        CDistrict: 1,
+        id: 1,
         NDistrict: "Supe",
         province: {
-          "CProvince": 1 ,
+          "id": 1,
           NProvince: "Barranca"
         }
       },
       {
-        CDistrict: 2,
+        id: 2,
         NDistrict: "Conchan",
         province: {
-          "CProvince": 7 ,
+          "id": 7,
           NProvince: "Chota"
         }
       },
       {
-        CDistrict: 3,
+        id: 3,
         NDistrict: "Circa",
         province: {
-          "CProvince": 8 ,
+          "id": 8,
           NProvince: "Abancay"
         }
       },
       {
-        CDistrict: 4,
+        id: 4,
         NDistrict: "Lobitos",
         province: {
-          "CProvince": 5 ,
+          "id": 5,
           NProvince: "Talara"
         }
       },
 
       {
-        CDistrict: 5,
+        id: 5,
         NDistrict: "Bellavista",
         province: {
-          "CProvince": 4 ,
+          "id": 4,
           NProvince: "Sullana"
         }
       }
     ],
     denuncias: [
       {
-        CComplaint: 1,
+        id: 1,
         NComplaint: "Robo",
-        policeStation: { CPoliceStation: 2 },
-        zone: { CZone: 1 }
+        policestation: {
+          "id": 2,
+        NName: "Chacra Colorada" }
       },
 
       {
-        CComplaint: 2,
+        id: 2,
         NComplaint: "Intento de Robo",
-        policeStation: { CPoliceStation: 5 },
-        zone: { CZone: 2 }
+        policestation: { "id": 5,
+        NName: "San Isidro" }
       },
 
       {
-        CComplaint: 3,
-        NComplaint: "Robo",
-        policeStation: { CPoliceStation: 6 },
-        zone: { CZone: 3 }
+        id: 3,
+        NComplaint: "Robo con pistola",
+        policestation: { "id": 6,
+        NName: "Policia Nacional del Peru" }
       },
 
       {
-        CComplaint: 4,
-        NComplaint: "Robo",
-        policeStation: { CPoliceStation: 7 },
-        zone: { CZone: 1 }
+        id: 4,
+        NComplaint: "Robo con cuchillo",
+        policestation: { "id": 7,
+        NName: "Belisario Flores" }
       },
 
       {
-        CComplaint: 5,
+        id: 5,
         NComplaint: "Intento de Robo",
-        policeStation: { CPoliceStation: 5 },
-        zone: { CZone: 1 }
+        policestation: { "id": 5,
+        NName: "San Isidro" }
       },
 
       {
-        CComplaint: 6,
+        id: 6,
         NComplaint: "Intento de Robo",
-        policeStation: { CPoliceStation: 1 },
-        zone: { CZone: 4 }
+        policestation: { "id": 1,
+        NName: "Alfonso Ugarte" }
       },
 
       {
-        CComplaint: 7,
+        id: 7,
         NComplaint: "Intento de Robo",
-        policeStation: { CPoliceStation: 8 },
-        zone: { CZone: 5 }
+        policestation: { "id": 4,
+        NName: "Orrantia del Mar" }
       }
+
     ],
     personas: [
       {
@@ -313,50 +315,71 @@ module.exports = function () {
     ],
     comisarias: [
       {
-        CPoliceStation: 1,
-        address: { CAddress: 1 },
+        id: 1,
+        address: {
+          "id": 1,
+          NUrb: "La herradura"
+        },
         NName: "Alfonso Ugarte",
         TPhone: "3896503"
       },
 
       {
-        CPoliceStation: 2,
-        address: { CAddress: 2 },
+        id: 2,
+        address: {
+          "id": 2,
+          NUrb: "Villacampa"
+        },
         NName: "Chacra Colorada",
         TPhone: "4812507"
       },
 
       {
-        CPoliceStation: 3,
-        address: { CAddress: 3 },
+        id: 3,
+        address: {
+          "id": 3,
+          NUrb: "San Felipe"
+        },
         NName: "Monserrat PNP",
         TPhone: "7822510"
       },
 
       {
-        CPoliceStation: 4,
-        address: { CAddress: 4 },
+        id: 4,
+        address: {
+          "id": 4,
+          NUrb: "San Juan"
+        },
         NName: "Orrantia del Mar",
         TPhone: "6997414"
       },
 
       {
-        CPoliceStation: 5,
-        address: { CAddress: 5 },
+        id: 5,
+        address: {
+          "id": 5,
+          NUrb: "Flores"
+        },
         NName: "San Isidro",
         TPhone: "4827858"
       },
 
       {
-        CPoliceStation: 6,
-        address: { CAddress: 6 },
+        id: 6,
+        address: {
+          "id": 6,
+          NUrb: "San German"
+        },
         NName: "Policia Nacional del Peru",
         TPhone: "4167310"
       },
 
       {
-        CPoliceStation: 7,
-        address: { CAddress: 7 },
+        id: 7,
+        address: {
+          "id": 7,
+          NUrb: "Los Sauces"
+        },
         NName: "Belisario Flores",
         TPhone: "3896500"
       }
@@ -406,64 +429,64 @@ module.exports = function () {
     ],
     direcciones: [
       {
-        CAddress: 1,
-        NUrb: "Urbanizacion 1",
+        id: 1,
+        NUrb: "La herradura",
         NStreet: "Calle 1",
-        NBlock: "Bloque 1",
+        NBlock: "Bloque 7",
         NLot: 1,
         district: { CDistrict: 1 }
       },
 
       {
-        CAddress: 2,
-        NUrb: "Urbanizacion 2",
+        id: 2,
+        NUrb: "Villacampa",
         NStreet: "Calle 2",
-        NBlock: "Bloque 2",
+        NBlock: "Bloque 12",
         NLot: 2,
         district: { CDistrict: 2 }
       },
 
       {
-        CAddress: 3,
-        NUrb: "Urbanizacion 3",
+        id: 3,
+        NUrb: "San Felipe",
         NStreet: "Calle 3",
-        NBlock: "Bloque 3",
+        NBlock: "Bloque 4",
         NLot: 3,
         district: { CDistrict: 3 }
       },
 
       {
-        CAddress: 4,
-        NUrb: "Urbanizacion 4",
-        NStreet: "Calle 4",
-        NBlock: "Bloque 4",
+        id: 4,
+        NUrb: "San Juan",
+        NStreet: "Calle 14",
+        NBlock: "Bloque 2",
         NLot: 4,
         district: { CDistrict: 4 }
       },
 
       {
-        CAddress: 5,
-        NUrb: "Urbanizacion 5",
-        NStreet: "Calle 5",
-        NBlock: "Bloque 5",
+        id: 5,
+        NUrb: "Flores",
+        NStreet: "Calle 9",
+        NBlock: "Bloque 8",
         NLot: 5,
         district: { CDistrict: 5 }
       },
 
       {
-        CAddress: 6,
-        NUrb: "Urbanizacion 6",
-        NStreet: "Calle 6",
-        NBlock: "Bloque 6",
+        id: 6,
+        NUrb: "San German",
+        NStreet: "Calle 1",
+        NBlock: "Bloque 12",
         NLot: 6,
         district: { CDistrict: 6 }
       },
 
       {
-        CAddress: 7,
-        NUrb: "Urbanizacion 7",
-        NStreet: "Calle 7",
-        NBlock: "Bloque 7",
+        id: 7,
+        NUrb: "Los Sauces",
+        NStreet: "Calle 14",
+        NBlock: "Bloque 5",
         NLot: 7,
         district: { CDistrict: 7 }
       }

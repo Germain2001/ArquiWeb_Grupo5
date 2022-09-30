@@ -1,3 +1,8 @@
+import { PolicestationBuscarComponent } from './page/policestation/policestation-buscar/policestation-buscar.component';
+import { PolicestationInsertComponent } from './page/policestation/policestation-insert/policestation-insert.component';
+import { NavbarlComponent } from './page/navbarl/navbarl.component';
+import { DistrictBuscarComponent } from './page/district/district-buscar/district-buscar.component';
+import { DistrictInsertComponent } from './page/district/district-insert/district-insert.component';
 import { ProvinceBuscarComponent } from './page/province/province-buscar/province-buscar.component';
 import { LoginComponent } from './page/login/login.component';
 import { DepartmentBuscarComponent } from './page/department/department-buscar/department-buscar.component';
@@ -11,6 +16,8 @@ import { DistrictComponent } from './page/district/district.component';
 import { PersonComponent } from './page/person/person.component';
 import { UserComponent } from './page/user/user.component';
 import { ComplaintComponent } from './page/complaint/complaint.component';
+import { ComplaintInsertComponent } from './page/complaint/complaint-insert/complaint-insert.component';
+import { ComplaintBuscarComponent } from './page/complaint/complaint-buscar/complaint-buscar.component';
 import { PolicestationComponent } from './page/policestation/policestation.component';
 import { DepartmentInsertComponent } from './page/department/department-insert/department-insert.component';
 import { ProvinceInsertComponent } from './page/province/province-insert/province-insert.component';
@@ -30,11 +37,14 @@ const routes: Routes = [{
   ]
 },
 {
-  path: 'address', component: AddressComponent, children: []
   path: 'address', component: AddressComponent, children: [
   ]
 },
 {
+  path: 'district', component: DistrictComponent, children: [
+    {path: 'new', component: DistrictInsertComponent},
+    {path: 'modificar/:id', component: DistrictInsertComponent},
+    {path: 'buscar', component: DistrictBuscarComponent}
   ]
 },
 {
@@ -44,16 +54,25 @@ const routes: Routes = [{
   path: 'user', component: UserComponent, children: []
 },
 {
-  path: 'complaint', component: ComplaintComponent, children: []
+  path: 'complaint', component: ComplaintComponent, children: [
+    {path: 'new',component: ComplaintInsertComponent},
+    {path: 'modificar/:id', component: ComplaintInsertComponent},
+    {path: 'buscar', component: ComplaintBuscarComponent}
+  ]
 },
 {
-  path: 'policestation', component: PolicestationComponent, children: []
+  path: 'policestation', component: PolicestationComponent, children: [
+    {path: 'new',component: PolicestationInsertComponent},
+    {path: 'modificar/:id', component: PolicestationInsertComponent},
+    {path: 'buscar', component: PolicestationBuscarComponent}
+  ]
 },
 {
   path: 'login', component: LoginComponent, children: []
 },
-
-
+{
+  path: 'navbarl', component: NavbarlComponent, children: []
+},
 
 ];
 
