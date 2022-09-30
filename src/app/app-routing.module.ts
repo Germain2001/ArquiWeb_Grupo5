@@ -1,4 +1,3 @@
-import { LandingPageComponent } from './page/landing-page/landing-page.component';
 import { PolicestationBuscarComponent } from './page/policestation/policestation-buscar/policestation-buscar.component';
 import { PolicestationInsertComponent } from './page/policestation/policestation-insert/policestation-insert.component';
 import { NavbarlComponent } from './page/navbarl/navbarl.component';
@@ -69,13 +68,10 @@ const routes: Routes = [{
   ]
 },
 {
-  path: 'login', component: LoginComponent
+  path: 'login', component: LoginComponent, children: []
 },
 {
   path: 'navbarl', component: NavbarlComponent, children: []
-},
-{
-  path: 'landingPage', component: LandingPageComponent
 },
 
 ];
