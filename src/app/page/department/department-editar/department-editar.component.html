@@ -1,0 +1,19 @@
+<h1>Departamento</h1>
+
+<mat-form-field class="example-full-width">
+  <mat-label>Id</mat-label>
+  <input matInput placeholder="id" [(ngModel)]="department.id">
+</mat-form-field>
+
+<br>
+
+<mat-form-field class="example-full-width">
+  <mat-label>Nombre</mat-label>
+  <input matInput required placeholder="name" [(ngModel)]="department.NDepartment">
+
+</mat-form-field>
+
+<br>
+<button mat-raised-button color="warn" (click)="aceptar()">Aceptar</button>
+<button mat-raised-button color="accent" routerLink="/department">Cancelar</button>
+<p>{{mensaje}}</p>

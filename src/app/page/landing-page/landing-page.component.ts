@@ -1,0 +1,16 @@
+import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-landing-page',
+  templateUrl: './landing-page.component.html',
+  styleUrls: ['./landing-page.component.css']
+})
+export class LandingPageComponent implements OnInit {
+
+  constructor(public route:ActivatedRoute) { }
+
+  ngOnInit(): void {
+  }
+
+}
