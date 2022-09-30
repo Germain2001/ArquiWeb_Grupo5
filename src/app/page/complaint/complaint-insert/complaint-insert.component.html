@@ -1,0 +1,32 @@
+<div class="container">
+
+    <h1>Complaint</h1>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Id</mat-label>
+      <input matInput placeholder="CComplaint" [(ngModel)]="complaint.id">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Nombre</mat-label>
+      <input matInput required placeholder="name" [(ngModel)]="complaint.NComplaint">
+    </mat-form-field>
+<br>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Seleccione Comisaria</mat-label>
+      <mat-select [(value)]="idPoliceStationSeleccionado" required>
+          <mat-option *ngFor="let p of listaPolicestation" [value]="p.id">
+              {{p.NName}}
+          </mat-option>
+      </mat-select>
+  </mat-form-field>
+
+    <br>
+    <button mat-raised-button color="primary" (click)="aceptar()">Aceptar</button>
+    <button mat-raised-button color="warn" routerLink="/complaint">Cancelar</button>
+    <p>{{mensaje}}</p>
+
+  </div>
